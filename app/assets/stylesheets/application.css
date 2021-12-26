@@ -1,15 +1,125 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Meie+Script&display=swap');
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(255, 255, 255, .7);
+  z-index: 10;
+}
+
+.cat-icon{
+  color: #F08080;
+  font-size: 35px;
+}
+
+.nav-link{
+  color: #222222;
+}
+.nav-link:hover{
+  color: white;
+  background-color: #ffc0cb;
+}
+
+#top h1{
+  font-family: 'Elsie Swash Caps', cursive;
+  color: white;
+  padding-top: 170px;
+  font-size: 100px;
+  animation: popup 2s cubic-bezier(0.22, 1, 0.36, 1) 1 forwards;
+  opacity:0;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(40px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1.0);
+  }
+  80%, 100% {
+    opacity: 1;
+  }
+}
+
+#top p{
+  font-family: 'Elsie Swash Caps', cursive;
+  color: white;
+  font-size: 50px;
+  padding-bottom: 20px;
+  animation-name:fadeUpAnime;
+  animation-duration:1s;
+  animation-delay: .3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+.img{
+  animation-name:fadeUpAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  animation-delay: .6s;
+  opacity:0;
+}
+
+.chevron-circle-down{
+  padding-top: 20px;
+  font-size: 100px;
+  animation:fadeUpAnime, move-y 1s infinite alternate ease-in-out;
+  animation-duration:1s;
+  animation-delay: 1.3s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  display: inline-block;
+  color: white;
+}
+@keyframes move-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.chevron-circle-down:hover{
+  color: white;
+}
+
+#top{
+  background-color: #ffc0cb;
+  min-height: 100vh;
+}
+
+#about{
+  background-color: blue;
+  min-height: 100vh;
+}
+
+#skill{
+  background-color: #ffc0cb;
+  min-height: 100vh;
+}
+
+#works{
+  background-color: blue;
+  min-height: 100vh;
+}
+
+#contact{
+  background-color: #ffc0cb;
+  min-height: 100vh;
+}
