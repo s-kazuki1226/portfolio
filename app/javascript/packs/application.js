@@ -3,9 +3,17 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
-import "channels"
-
-Rails.start()
-Turbolinks.start()
+window.onload=function(){
+  var scroll = document.querySelectorAll('.up');
+   
+  var Animation = function() {
+    for(var i = 0; i < scroll.length; i++) {
+    var triggerMargin = 80;
+    if (window.innerHeight > scroll[i].getBoundingClientRect().top + triggerMargin) {
+    scroll[i].classList.add('show');
+    }
+    }
+    }
+    window.addEventListener('scroll', Animation);
+  
+}  

@@ -1,23 +1,200 @@
+<header>
+  <nav class="navbar navbar-expand">
+    <div class="container-fluid ps-5 pe-5">
+      <a class="navbar-brand ms-3" href="/"><i class="fas fa-paw cat-icon"></i></a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
+        <div class="btn-group">
+          <ul class="navbar-nav me-3">
+            <li class="nav-item"><%= link_to 'TOP', '#top', class: 'nav-link'%></li>
+            <li class="nav-item"><%= link_to 'ABOUT', '#about', class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'SKILLS', '#skills', class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'WORKS', '#works', class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'CONTACT', '#contact', class: 'nav-link' %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <div id="top">
-  <div class="text-center text-secondary">
+  <div class="text-center">
     <h1>Portfolio</h1>
     <p>Kazuki Shida</p>
-    <div class="img"><%= image_tag "白猫.jpg" %></div>
+    <div class="img" alt=""><%= image_tag "白猫.jpg" %></div>
     <a class="chevron-circle-down" href="#about"><i class="fas fa-chevron-circle-down"></i></a>
   </div>
 </div>
+
 <div id="about">
-  
+  <div class="text-center">
+    <h1>About Me</h1>
+    <div class="img" alt=""><%= image_tag "宣材写真.jpg" %></div>
+    <p>
+      ポートフォリオをご覧いただきありがとうございます。信太和樹と申します。<br>
+      猫とゲームが大好きな、茨城県出身の就活生です。<br>
+      大学3年から4年の夏まで、PUBGというFPSのゲームで選手としてチーム活動をし、<br>
+      その後ITに興味を持ち始め、独学で3ヶ月間、その後プログラミングスクールで2ヶ月間楽しみながら勉強しました。<br>
+      その中で、ペットの写真を投稿するアプリとポートフォリオをRuby on Railsで作成しました。<br>
+      まだまだ、未熟者ですが、スキルアップのため、日々精進して参ります。
+    </p>
+    <p>GitHub: <a href="https://github.com/s-kazuki1226" target="_blank" rel="noopener">https://github.com/s-kazuki1226</a></p>
+  </div>
 </div>
 
-<div id="skill">
+<div id="skills">
+  <div class="text-center">
+    <h1>Skills</h1>
+  </div>   
+  <div class="skills up op">
+    <ul class="lines">
+      <li class="line l--0">
+        <span class="line__label title">
+          Skill level:
+        </span>
+      </li>
+      <li class="line l--25">
+        <span class="line__label">
+          The basics
+        </span>
+      </li>
+      <li class="line l--50">
+        <span class="line__label">
+          Advanced
+        </span>
+      </li>
+      <li class="line l--75">
+        <span class="line__label">
+          Seasoned
+        </span>
+      </li>
+      <li class="line l--100">
+        <span class="line__label">
+          Expert
+        </span>
+      </li>
+    </ul>
   
+    <div class="charts">
+      <div class="chart chart--dev">
+        <span class="chart__title">Front-end</span>
+        <ul class="chart--horiz">
+          <li class="chart__bar" style="width: 40%;">
+            <span class="chart__label">
+              HTML5
+            </span>
+            <span class="chart__percent">
+              40%
+            </span>
+          </li>
+          <li class="chart__bar" style="width: 35%;">
+            <span class="chart__label">
+              CSS3
+            </span>
+            <span class="chart__percent">
+              35%
+            </span>
+          </li>
+          <li class="chart__bar" style="width: 70%;">
+            <span class="chart__label">
+              Bootstrap
+            </span>
+            <span class="chart__percent">
+              70%
+            </span>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="chart chart--prod">
+        <span class="chart__title">Back-end</span>
+        <ul class="chart--horiz">
+          <li class="chart__bar" style="width: 75%;">
+            <span class="chart__label">
+              Ruby
+            </span>
+            <span class="chart__percent">
+              75%
+            </span>
+          </li>
+          <li class="chart__bar" style="width: 80%;">
+            <span class="chart__label">
+              Ruby on rails
+            </span>
+            <span class="chart__percent">
+              80%
+            </span>
+          </li>
+          <li class="chart__bar" style="width: 75%;">
+            <span class="chart__label">
+              MySQL
+            </span>
+            <span class="chart__percent">
+              75%
+            </span>
+          </li>
+          <li class="chart__bar" style="width: 75%;">
+            <span class="chart__label">
+              PostgreSQL
+            </span>
+            <span class="chart__percent">
+              75%
+            </span>
+          </li>
+          <li class="chart__bar" style="width: 70%;">
+            <span class="chart__label">
+              Git / GitHub
+            </span>
+            <span class="chart__percent">
+              70%
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 
 <div id="works">
-  
+  <div class="text-center">
+    <h1>Works</h1>
+  </div> 
+  <div class="container up op">
+    <div class="row">
+      <div class="pet-show col-md-6 text-center">
+        <%= link_to image_tag('pet-show.png', class: 'img1' ), "pet_show", :target=>["_blank"]%>
+        <p>
+          みんなのペット紹介
+        </p>
+      </div>
+      <div class="portfolio col-md-6 text-center">
+        <%= link_to image_tag('top.png', class: 'img2' ), "portfolio", :target=>["_blank"]%>
+        <p>
+          Portfolio
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="contact">
-  
+  <div class="text-center">
+    <h1>Contact</h1>
+    <div class="message">
+      <p>
+        最後までご覧いただきありがとうございました。<br>
+        もし私について何かコメントがありましたら、下記ボタンをご利用ください。
+      </p>
+    </div>
+    <a href="mailto:kazuki.shida1226@gmail.com" class="btn btn-lg"><i class="fa fa-envelope section-contact-btn-icon btn-icon" aria-hidden="true"></i>MESSAGE ME</a>
+    <div class="email">
+    <p>
+      Send an email to me:
+      <span>kazuki.shida1226@gmail.com</span>
+    </p>
+    </div>
+  </div>  
+ 
 </div>
