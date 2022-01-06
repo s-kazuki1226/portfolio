@@ -141,11 +141,11 @@ header {
 #about img {
   margin-top: 20px;
   width: 180px;
-  height: 180px;
+  height: 230px;
   object-fit:cover;
   border: 2px solid #00473e;
 	border-radius:50%;
-	object-position: 0px -19px
+	object-position: 0px -15px
 }
 
 #about p {
@@ -599,7 +599,8 @@ padding: 0px;
 	
 	#about img {
 	  width: 130px;
-  height: 130px;
+    height: 180px;
+    object-position: 0px -10px
 	}
 	
 	#about p {
