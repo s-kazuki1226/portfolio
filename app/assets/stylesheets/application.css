@@ -326,6 +326,18 @@ padding: 0px;
   transition-duration: 0.3s;
 }
 
+#works .img3 {
+  width: 95%;
+  height: 95%;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+
+#works .img3:hover {
+  transform:scale(1.05,1.05);
+  transition-duration: 0.3s;
+}
+
 #works p {
   font-size: 20px;
   margin-top: 5px;
@@ -340,6 +352,9 @@ padding: 0px;
   padding-top: 40px;
 }
 
+#works .recruit-game {
+  padding-top: 40px;
+}
 
 /*--   Portfolio   --*/
 
@@ -515,6 +530,85 @@ padding: 0px;
   transform:scale(1.05,1.05);
   transition-duration: 0.3s;
 }
+
+/*--   SUPER PEOPLE用フレンド募集掲示板   --*/
+
+.recruit-games {
+  padding-top: 80px;
+  background-color: #fffffe;
+  min-height: 100vh;
+}
+
+.recruit-games h3 {
+  color: #272343;
+  display: flex;
+  align-items: center;
+}
+
+.recruit-games h3:before, h3:after {
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+}
+
+.recruit-games h3:before {
+  margin-right: 1rem;
+}
+
+.recruit-games h3:after {
+  margin-left: 1rem;
+}
+
+.recruit-games h5 {
+  color: #272343;
+  display: flex;
+  align-items: center;
+}
+
+.recruit-games h5:before, h5:after {
+  border-top: 1px solid;
+  content: "";
+  flex-grow: 1;
+}
+
+.recruit-games h5:before {
+  margin-right: 1rem;
+}
+
+.recruit-games h5:after {
+  margin-left: 1rem;
+}
+
+.recruit-games p {
+  font-size: 17px;
+  width:100%;
+  overflow-wrap: break-word;
+  color: #2d334a;
+}
+
+.recruit-games .photos a {
+  color: #fffffe;
+  margin-left: 10px;
+}
+
+.recruit-games .photos a:hover {
+  color: #fffffe;
+}
+
+.recruit-games .recruit-game1 {
+  margin-bottom: 10px;
+  width: 350px;
+  height: 250px;
+  border: 2px solid #272343;
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+
+.recruit-games .recruit-game1:hover {
+  transform:scale(1.05,1.05);
+  transition-duration: 0.3s;
+}
+
 
 
 /*--   contact   --*/
