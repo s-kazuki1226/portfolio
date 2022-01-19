@@ -21,7 +21,7 @@
   <div class="text-center">
     <h1>Portfolio</h1>
     <p>Kazuki Shida</p>
-    <div class="img" alt=""><%= image_tag "白猫.jpg" %></div>
+    <div class="img"><%= image_tag "白猫.jpg", :alt => '' %></div>
     <a class="chevron-circle-down" href="#about"><i class="fas fa-chevron-circle-down"></i></a>
   </div>
 </div>
@@ -29,7 +29,7 @@
 <div id="about">
   <div class="text-center">
     <h1>About Me</h1>
-    <div class="img" alt=""><%= image_tag "宣材写真.jpg" %></div>
+    <div class="img"><%= image_tag "宣材写真.jpg", :alt => '' %>,</div>
     <p>
       ポートフォリオをご覧いただきありがとうございます。信太和樹と申します。<br>
       猫とゲームが大好きな、茨城県出身の就活生です。<br>
@@ -164,19 +164,19 @@
   <div class="container up op">
     <div class="row">
       <div class="pet-show col-md-4 text-center">
-        <%= link_to image_tag('pet-show.png', class: 'img1' ), "pet_show", :target=>["_blank"]%>
+        <%= link_to image_tag('pet-show.png', class: 'img1', alt: '' ), "pet_show", :target=>["_blank"]%>
         <p>
           みんなのペット紹介
         </p>
       </div>
       <div class="portfolio col-md-4 text-center">
-        <%= link_to image_tag('top.png', class: 'img2' ), "portfolio", :target=>["_blank"]%>
+        <%= link_to image_tag('top.png', class: 'img2', alt: ''  ), "portfolio", :target=>["_blank"]%>
         <p>
           Portfolio
         </p>
       </div>
       <div class="recruit-game col-md-4 text-center">
-        <%= link_to image_tag('recruit-game.png', class: 'img3' ), "recruit_game", :target=>["_blank"]%>
+        <%= link_to image_tag('recruit-game.png', class: 'img3', alt: ''  ), "recruit_game", :target=>["_blank"]%>
         <p>
           SUPER PEOPLE用フレンド募集掲示板
         </p>
