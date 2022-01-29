@@ -368,6 +368,7 @@ padding: 0px;
   color: #272343;
   display: flex;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .portfolios h3:before, h3:after {
@@ -388,6 +389,8 @@ padding: 0px;
   color: #272343;
   display: flex;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .portfolios h5:before, h5:after {
@@ -456,6 +459,7 @@ padding: 0px;
   color: #272343;
   display: flex;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .pet-shows h3:before, h3:after {
@@ -476,6 +480,8 @@ padding: 0px;
   color: #272343;
   display: flex;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pet-shows h5:before, h5:after {
@@ -543,6 +549,7 @@ padding: 0px;
   color: #272343;
   display: flex;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .recruit-games h3:before, h3:after {
@@ -563,6 +570,8 @@ padding: 0px;
   color: #272343;
   display: flex;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .recruit-games h5:before, h5:after {
@@ -631,11 +640,6 @@ padding: 0px;
   padding-top: 90px
 }
 
-#contact .email {
-  font-size: 20px;
-  padding-top: 30px;
-}
-
 #contact .btn {
   margin-top: 50px;
   background-color: #faae2b;
@@ -650,9 +654,6 @@ padding: 0px;
   margin-right: 10px;
 }
 
-#contact span {
-  margin-left: 10px;
-}
 
 /*--   画面サイズが480px以下の場合ここの記述が適用される   --*/
 
